@@ -71,16 +71,56 @@
 // }
 // pattern();
 
+// function pattern(){
+
+//     for(let i=1;i<=5;i++){
+
+//         for(let j=1;j<=(6-i);j++){
+
+//             process.stdout.write("*");
+//             // console.log(j);
+//         }
+//         process.stdout.write("\n")
+//         // console.log("\n");
+//     } 
+
+// }
+// pattern();
+
+
+// function pattern(){
+
+//     for(let i=1;i<=5;i++){
+
+//         for(let j=5;j>=5-(i-1);j=j-1){
+
+//             // process.stdout.write("*");
+//             console.log(j);
+//         }
+//         // process.stdout.write("\n")
+//         console.log("\n");
+//     } 
+
+// }
+// pattern();
+
+
 function pattern(){
 
     for(let i=1;i<=5;i++){
 
         for(let j=1;j<=(6-i);j++){
 
-            process.stdout.write("*");
+            process.stdout.write(" ");
+        //     console.log("");
         }
-        process.stdout.write("\n")
+              for(let j=1; j<=i;j++){
+                 process.stdout.write("*");
+       }
+            process.stdout.write("\n");
     } 
 
 }
 pattern();
+
+
