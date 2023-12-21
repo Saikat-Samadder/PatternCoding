@@ -105,6 +105,95 @@
 // pattern();
 
 
+// function pattern(){
+
+//     for(let i=1;i<=5;i++){
+
+//         for(let j=1;j<=(6-i);j++){
+
+//             process.stdout.write(" ");
+//         //     console.log("");
+//         }
+//               for(let j=1; j<=i;j++){
+//                  process.stdout.write("*");
+//        }
+//             process.stdout.write("\n");
+//     } 
+
+// }
+// pattern();
+
+// function pattern(){
+
+//     for(let i=1;i<=4;i++){
+
+//         for(let j=1;j<=(6-i);j++){
+
+//             process.stdout.write(" ");
+//         //     console.log("");
+//         }
+//               for(let j=1; j<=i;j++){
+//                 //  process.stdout.write("*");
+//                 console.log(i);
+//        }
+//             // process.stdout.write("\n");
+//             console.log("\n");
+//     } 
+
+// }
+ // pattern()
+
+
+// var string =" "
+
+// function pattern(){
+
+//     for(let i=1;i<=5;i++){
+
+//         for(let j=1;j<=(6-i);j++){
+
+//             process.stdout.write(" ");
+//         //     console.log("");
+//         }
+//               for(let j=1; j<=i;j++){
+//                 //  process.stdout.write("*");
+//                 // console.log(j);
+//                  string += String.fromCharCode(j+64)
+//        }
+//             // process.stdout.write("\n");
+//             console.log("\n");
+//             string += "\n";
+//         console.log(string)
+//     } 
+
+// }
+// pattern()
+
+
+
+// function pattern(){
+
+//     for(let i=1;i<=5;i++){
+
+//         for(let j=1;j<=(6-i);j++){
+
+//             process.stdout.write(" ");
+//         //     console.log("");
+//         }
+//          for(let j=1; j<=(i*2)-1;j++){
+//                  process.stdout.write("*");
+//                 // console.log(j);
+//                 //  string += String.fromCharCode(j+64)
+//        }
+//             process.stdout.write("\n");
+//             // console.log("\n");
+//         //     string += "\n";
+//         // console.log(string)
+//     } 
+
+// }
+// pattern()
+
 function pattern(){
 
     for(let i=1;i<=5;i++){
@@ -114,13 +203,20 @@ function pattern(){
             process.stdout.write(" ");
         //     console.log("");
         }
-              for(let j=1; j<=i;j++){
-                 process.stdout.write("*");
-       }
-            process.stdout.write("\n");
+         for(let j=1; j<=i;j++){
+                //  process.stdout.write("*");
+                console.log(j);
+                //  string += String.fromCharCode(j+64)
+         }
+
+         for(let j=i-1;j>=1;j--){
+            console.log(j);
+         }
+            // process.stdout.write("\n");
+            console.log("\n");
+        //     string += "\n";
+        // console.log(string)
     } 
 
 }
-pattern();
-
-
+pattern()
