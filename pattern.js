@@ -194,29 +194,72 @@
 // }
 // pattern()
 
-function pattern(){
+// function pattern(){
 
-    for(let i=1;i<=5;i++){
+//     for(let i=1;i<=5;i++){
 
-        for(let j=1;j<=(6-i);j++){
+//         for(let j=1;j<=(6-i);j++){
 
-            process.stdout.write(" ");
-        //     console.log("");
-        }
-         for(let j=1; j<=i;j++){
-                //  process.stdout.write("*");
-                console.log(j);
-                //  string += String.fromCharCode(j+64)
-         }
+//             process.stdout.write(" ");
+//         //     console.log("");
+//         }
+//          for(let j=1; j<=i;j++){
+//                 //  process.stdout.write("*");
+//                 console.log(j);
+//                 //  string += String.fromCharCode(j+64)
+//          }
 
-         for(let j=i-1;j>=1;j--){
-            console.log(j);
-         }
-            // process.stdout.write("\n");
-            console.log("\n");
-        //     string += "\n";
-        // console.log(string)
-    } 
+//          for(let j=i-1;j>=1;j--){
+//             console.log(j);
+//          }
+//             // process.stdout.write("\n");
+//             console.log("\n");
+//         //     string += "\n";
+//         // console.log(string)
+//     } 
 
-}
-pattern()
+// }
+// pattern()
+
+// function exceedingWordtest (word){
+//     const upperChars = word
+//     .toUpperCase()
+//     .replace(/[^A-Z]/g, '') // remove all from str except A to Z alphabets
+
+//   const adjacentDiffList = []
+
+//   for (let i = 0; i < upperChars.length - 1; i++) {
+//     // destructuring current char & adjacent char by index, cause in javascript String is an object.
+//     const { [i]: char, [i + 1]: adjacentChar } = upperChars
+
+//     if (char !== adjacentChar) {
+//       adjacentDiffList.push(
+//         Math.abs(char.charCodeAt() - adjacentChar.charCodeAt())
+//       )
+//     }
+//   }
+
+//   for (let i = 0; i < adjacentDiffList.length - 1; i++) {
+//     const { [i]: charDiff, [i + 1]: secondCharDiff } = adjacentDiffList
+
+//     if (charDiff > secondCharDiff) {
+//       return false
+//     }
+//   }
+//   return true
+// }
+// console.log(exceedingWordtest ('acgl'))
+// console.log(exceedingWordtest ('aebc'))
+
+// function calculateAndReturnName(arr) {
+//     // Calculate the sum of the array
+//     var sum = arr.reduce(function (accumulator, currentValue) {
+//       return accumulator + currentValue;
+//     }, 0);
+  
+//     // Check if the sum is odd or even
+//     var result = sum % 2 === 0 ? 'Rudransh' : 'Raghav';
+  
+//     // Return the result
+//     return result;
+//   }
