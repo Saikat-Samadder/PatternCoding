@@ -263,3 +263,169 @@
 //     // Return the result
 //     return result;
 //   }
+
+
+// function pattern(){
+
+//         for(let i=5;i>=1;i--){
+                
+//                 for(let j = 1;j<=5-i; j++){
+
+//                         process.stdout.write(" ")
+
+//                 }
+//                    for(let k =1;k<=2*i-1;k++){
+                       
+//                         process.stdout.write("*")
+//                    }
+//                    process.stdout.write("\n") 
+//                 }
+ 
+//         }
+// pattern();
+
+// function pattern(){
+//         for(let i=5;i>=1;i--){
+             
+//                    //Star
+//                 for(let j=1;j<=i;j++){
+
+//                         process.stdout.write("* ")
+//                 }
+//                   //Space
+//                 for(let k=1;k<=2*5-2*i;k++){
+//                         process.stdout.write("  ") 
+//                 } 
+                
+//                   //Star
+//                   for(let j=1;j<=i;j++){
+
+//                         process.stdout.write("* ")
+//                   }
+
+//                   process.stdout.write("\n") 
+
+//                 }
+//         for(let i=1;i<=5;i++){
+             
+//                 //Star
+//              for(let j=1;j<=i;j++){
+
+//                      process.stdout.write("* ")
+//              }
+//                //Space
+//              for(let k=1;k<=2*5-2*i;k++){
+//                      process.stdout.write("  ") 
+//              } 
+             
+//                //Star
+//                for(let j=1;j<=i;j++){
+
+//                      process.stdout.write("* ")
+//                }
+
+//                process.stdout.write("\n") 
+
+
+//            }
+
+//         }
+
+// pattern();
+
+// function pattern(){
+//         for(let i=1;i<=4;i++){
+             
+//                    //Star
+//                 for(let j=1;j<=i;j++){
+
+//                         process.stdout.write("* ")
+//                 }
+//                   //Space
+//                 for(let k=1;k<=2*4-2*i;k++){
+//                         process.stdout.write("  ") 
+//                 } 
+                
+//                   //Star
+//                   for(let j=1;j<=i;j++){
+
+//                         process.stdout.write("* ")
+//                   }
+
+//                   process.stdout.write("\n") 
+
+//                 }
+//         for(let i=4;i>=1;i--){
+             
+//                 //Star
+//              for(let j=1;j<=i;j++){
+
+//                      process.stdout.write("* ")
+//              }
+//                //Space
+//              for(let k=1;k<=2*4-2*i;k++){
+//                      process.stdout.write("  ") 
+//              } 
+             
+//                //Star
+//                for(let j=1;j<=i;j++){
+
+//                      process.stdout.write("* ")
+//                }
+
+//                process.stdout.write("\n") 
+
+
+//            }
+
+//         }
+
+// pattern();
+
+pattern();
+
+function pattern(){
+        for(let i=1;i<=4;i++){
+             
+                   //Space
+                for(let k=1;k<=4-i;k++){ 
+                     process.stdout.write("  ") 
+                } 
+
+                 //star
+                for(let j=1;j<=i;j++){
+
+                        process.stdout.write("  * ")
+                }
+                  //Space
+                for(let k=1;k<=4-i;k++){
+                        process.stdout.write("  ") 
+                } 
+
+                  process.stdout.write("\n") 
+
+              }     
+
+              for(let i=4;i>=1;i--){
+             
+                //Space
+             for(let k=1;k<=4-i;k++){ 
+                  process.stdout.write("  ") 
+             } 
+
+              //star
+             for(let j=1;j<=i;j++){
+
+                     process.stdout.write("  * ")
+             }
+               //Space
+             for(let k=1;k<=4-i;k++){
+                     process.stdout.write("   ") 
+             } 
+
+               process.stdout.write("\n") 
+
+           }     
+        }
+
+pattern();
