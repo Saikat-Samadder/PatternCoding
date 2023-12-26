@@ -382,50 +382,123 @@
 
 // pattern();
 
-pattern();
+// pattern();
 
-function pattern(){
-        for(let i=1;i<=4;i++){
+// function pattern(){
+//         for(let i=1;i<=4;i++){
              
-                   //Space
-                for(let k=1;k<=4-i;k++){ 
-                     process.stdout.write("  ") 
-                } 
+//                    //Space
+//                 for(let k=1;k<=4-i;k++){ 
+//                      process.stdout.write("  ") 
+//                 } 
 
-                 //star
-                for(let j=1;j<=i;j++){
+//                  //star
+//                 for(let j=1;j<=i;j++){
 
-                        process.stdout.write("  * ")
-                }
-                  //Space
-                for(let k=1;k<=4-i;k++){
-                        process.stdout.write("  ") 
-                } 
+//                         process.stdout.write("  * ")
+//                 }
+//                   //Space
+//                 for(let k=1;k<=4-i;k++){
+//                         process.stdout.write("  ") 
+//                 } 
 
-                  process.stdout.write("\n") 
+//                   process.stdout.write("\n") 
 
-              }     
+//               }     
 
-              for(let i=4;i>=1;i--){
+//               for(let i=4;i>=1;i--){
              
-                //Space
-             for(let k=1;k<=4-i;k++){ 
-                  process.stdout.write("  ") 
-             } 
+//                 //Space
+//              for(let k=1;k<=4-i;k++){ 
+//                   process.stdout.write("  ") 
+//              } 
 
-              //star
-             for(let j=1;j<=i;j++){
+//               //star
+//              for(let j=1;j<=i;j++){
 
-                     process.stdout.write("  * ")
-             }
-               //Space
-             for(let k=1;k<=4-i;k++){
-                     process.stdout.write("   ") 
-             } 
+//                      process.stdout.write("  * ")
+//              }
+//                //Space
+//              for(let k=1;k<=4-i;k++){
+//                      process.stdout.write("   ") 
+//              } 
 
-               process.stdout.write("\n") 
+//                process.stdout.write("\n") 
 
-           }     
+//            }     
+//         }
+
+// pattern();
+
+
+
+// function deciToBinary(){
+//         let num = 10;
+//         let rem;
+//         let mul = 1;
+//         let ans = 0;
+//         while(num>0){
+//                 rem = num % 2;
+//                 num =parseInt(num/2);
+//                 ans = rem*mul+ans;
+//                 mul= mul*10;       
+//              }
+//              console.log(ans);
+// }
+
+// deciToBinary();
+
+// var a =10;
+
+// function xyz(){
+//         var a =20
+// }
+// xyz()
+// console.log(a);
+
+
+// function addDigit(num){
+//         while(num>9){
+//              var ans = 0;
+//              var rem;   
+//        while(num>0){
+             
+//                 rem = num%10;
+//                 num = parseInt(num/10);
+//                 ans = rem + ans
+             
+
+//         }
+
+//         num = ans
+//      }
+
+//      return num;
+// }
+// let res = addDigit(38)
+// console.log(res);
+
+// function Leapyear(num){
+//         if(num%400==0){
+//                 console.log("Leap Year");
+//         }else if (num%4==0 && num%100!=0){
+//                 console.log("Leap Year"); 
+//         }else{
+//                 console.log("Not a LeapYear");
+//         }
+// }
+// Leapyear(2024);
+
+function ResverseInt(num){
+   var ans = 0; var rem ;
+        while(num>0){
+          
+            rem = num%10;
+            num = parseInt(num/10);
+            ans = ans*10+rem;    
         }
 
-pattern();
+        return ans
+}
+let res =  ResverseInt(1534236469);
+console.log(res);
