@@ -500,5 +500,5 @@ function ResverseInt(num){
 
         return ans
 }
-let res =  ResverseInt(1534236469);
-console.log(res);
+let result =  ResverseInt(1534236469);
+console.log(result);
