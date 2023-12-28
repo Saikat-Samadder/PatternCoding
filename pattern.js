@@ -489,16 +489,16 @@
 // }
 // Leapyear(2024);
 
-function ResverseInt(num){
-   var ans = 0; var rem ;
-        while(num>0){
+//function ResverseInt(num){
+//   var ans = 0; var rem ;
+        //while(num>0){
           
-            rem = num%10;
-            num = parseInt(num/10);
-            ans = ans*10+rem;    
-        }
+           // rem = num%10;
+          //  num = parseInt(num/10);
+           // ans = ans*10+rem;    
+     //   }
 
-        return ans
-}
-let result =  ResverseInt(1534236469);
-console.log(result);
+       // return ans
+//}
+//let result =  ResverseInt(1534236469);
+//console.log(result);
