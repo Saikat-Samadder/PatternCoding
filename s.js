@@ -915,20 +915,52 @@
 // }
 // console.log(arr);
 
-let arr =  [2,5,63,5,48,96,3]
+// let arr =  [2,5,63,5,48,96,3]
 
-let temp;
+// let temp;
 
-for(let i=0;i<arr.length;i++){
+// for(let i=0;i<arr.length;i++){
 
-    for(let j= i+1;j<arr.length;j++){
+//     for(let j= i+1;j<arr.length;j++){
          
-         if(arr[i]<arr[j]){
+//          if(arr[i]<arr[j]){
 
-            temp = arr[i]
-            arr[i] = arr[j]
-            arr[j] = temp
-         }
-    }
+//             temp = arr[i]
+//             arr[i] = arr[j]
+//             arr[j] = temp
+//          }
+//     }
+// }
+// console.log(arr[1]);
+
+
+
+// let N = 7;
+// let arr =[1,2,3,4,5,7]
+
+// let sum = 0;
+
+// for(let i=0;i<arr.length-1;i++){
+//     sum= sum + arr[i]
+// }
+
+// let ans = N*(N-1)/2;
+
+// let res = ans-sum;
+
+// console.log(res);
+
+let n = 5;
+
+let arr=[0,1,1,2,3,5,8]
+
+arr[0] = 0;
+arr[1] = 1;
+
+for(let i=2;i<n-1;i++){
+ 
+    arr[i]= arr[i-1]+arr[i-2]
+
+    
 }
-console.log(arr[1]);
+console.log(arr[n-1]);
