@@ -1045,27 +1045,41 @@
 // }
 
 
-for (let i = 0; i<=4; i++) {
+// for (let i = 0; i<=4; i++) {
 
-    for(let j=1;j<=5-i;j++){
-        process.stdout.write(" ")
-        // console.log(j);
-    }
-         for(let k=1;k<=(2*i+1);k++){
-            process.stdout.write("*")
-        }
-                 process.stdout.write("\n")
+//     for(let j=1;j<=5-i;j++){
+//         process.stdout.write(" ")
+//         // console.log(j);
+//     }
+//          for(let k=1;k<=(2*i+1);k++){
+//             process.stdout.write("*")
+//         }
+//                  process.stdout.write("\n")
+// }
+
+// for (let i = 0; i<=5; i++) {
+
+//     for(let j=1;j<=i;j++){
+//         process.stdout.write(" ")
+//         // console.log(j);
+//     }
+//          for(let k=1;k<=2*5-(2*i+1);k++){
+//             process.stdout.write("*")
+//         }
+//                  process.stdout.write("\n")
+// }
+
+
+
+for(let i=0; i<=4; i++){
+      for(let j=0;j<=i;j++){
+         process.stdout.write("*")
+      }
+      process.stdout.write("\n")
 }
-
-for (let i = 0; i<=5; i++) {
-
-    for(let j=1;j<=i;j++){
-        process.stdout.write(" ")
-        // console.log(j);
-    }
-         for(let k=1;k<=2*5-(2*i+1);k++){
-            process.stdout.write("*")
-        }
-                 process.stdout.write("\n")
+for(let i=1; i<=4; i++){
+     for(let j=0;j<=4-i;j++){
+        process.stdout.write("*")
+     }
+     process.stdout.write("\n")
 }
-
