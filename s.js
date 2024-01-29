@@ -1071,15 +1071,30 @@
 
 
 
-for(let i=0; i<=4; i++){
-      for(let j=0;j<=i;j++){
-         process.stdout.write("*")
-      }
-      process.stdout.write("\n")
-}
-for(let i=1; i<=4; i++){
-     for(let j=0;j<=4-i;j++){
-        process.stdout.write("*")
-     }
-     process.stdout.write("\n")
+// for(let i=0; i<=4; i++){
+//       for(let j=0;j<=i;j++){
+//          process.stdout.write("*")
+//       }
+//       process.stdout.write("\n")
+// }
+// for(let i=1; i<=4; i++){
+//      for(let j=0;j<=4-i;j++){
+//         process.stdout.write("*")
+//      }
+//      process.stdout.write("\n")
+// }
+
+ let start = 1
+for(let i=0; i<=4;i++){
+    if(i%2==0){
+      start = 1;
+    }else{
+      start = 0;
+    }
+   for(let j=0; j<=i;j++){
+      console.log(start);
+      start = 1- start;
+   }
+
+   process.stdout.write("\n")
 }
