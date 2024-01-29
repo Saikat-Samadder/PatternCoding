@@ -1100,16 +1100,27 @@
 // }
 
 
-for(let i=0;i<=3;i++){
+// for(let i=0;i<=3;i++){
     
-   for(let j=0; j<=i;j++){
-      process.stdout.write("*")
+//    for(let j=0; j<=i;j++){
+//       process.stdout.write("*")
+//    }
+//       for(let k=0;k<=2*(3-i);k++){
+//          process.stdout.write(" ")
+//       }
+//       for(let j=0; j<=i;j++){
+//          process.stdout.write("*")
+//       }
+//       process.stdout.write("\n")
+// }
+
+let num = 1;
+for(let i=0;i<=4;i++){
+
+   for(let j=1;j<=i;j++){
+       console.log(num);
+       num = num + 1
    }
-      for(let k=0;k<=2*(3-i);k++){
-         process.stdout.write(" ")
-      }
-      for(let j=0; j<=i;j++){
-         process.stdout.write("*")
-      }
-      process.stdout.write("\n")
+   process.stdout.write("\n")
 }
+
