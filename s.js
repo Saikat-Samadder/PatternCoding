@@ -1084,17 +1084,32 @@
 //      process.stdout.write("\n")
 // }
 
- let start = 1
-for(let i=0; i<=4;i++){
-    if(i%2==0){
-      start = 1;
-    }else{
-      start = 0;
-    }
-   for(let j=0; j<=i;j++){
-      console.log(start);
-      start = 1- start;
-   }
+//  let start = 1
+// for(let i=0; i<=4;i++){
+//     if(i%2==0){
+//       start = 1;
+//     }else{
+//       start = 0;
+//     }
+//    for(let j=0; j<=i;j++){
+//       console.log(start);
+//       start = 1- start;
+//    }
 
-   process.stdout.write("\n")
+//    process.stdout.write("\n")
+// }
+
+
+for(let i=0;i<=3;i++){
+    
+   for(let j=0; j<=i;j++){
+      process.stdout.write("*")
+   }
+      for(let k=0;k<=2*(3-i);k++){
+         process.stdout.write(" ")
+      }
+      for(let j=0; j<=i;j++){
+         process.stdout.write("*")
+      }
+      process.stdout.write("\n")
 }
