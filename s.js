@@ -1114,13 +1114,27 @@
 //       process.stdout.write("\n")
 // }
 
-let num = 1;
-for(let i=0;i<=4;i++){
+// let num = 1;
+// for(let i=0;i<=4;i++){
 
-   for(let j=1;j<=i;j++){
-       console.log(num);
-       num = num + 1
-   }
-   process.stdout.write("\n")
+//    for(let j=1;j<=i;j++){
+//        console.log(num);
+//        num = num + 1
+//    }
+//    process.stdout.write("\n")
+// }
+
+
+for( let i = 0; i <= 100; i++){
+
+    if( i%3 === 0 && i%5 === 0){
+        console.log("FizzBuzz.");
+    }
+    else if(i%3 === 0){
+        console.log("Fizz");
+    }else if(i%5 === 0){
+        console.log("Buzz");
+    }else{
+        console.log(i);
+    }
 }
-
