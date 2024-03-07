@@ -1180,13 +1180,41 @@
 //Finding the Average
 
 
+// const numbers = [2, 5, 1, 8];
+
+// let sum = 0;
+
+// for(let i = 0;i<numbers.length;i++){
+//     sum = sum + numbers[i];
+// }
+// var avg = sum/numbers.length;
+// console.log(avg);
+
+
+
+//Finding the Maximum/Minimum
+
 const numbers = [2, 5, 1, 8];
+let MaxNumber = numbers[0];
 
-let sum = 0;
+for(let i=0; i<=numbers.length;i++){
 
-for(let i = 0;i<numbers.length;i++){
-    sum = sum + numbers[i];
+    if(numbers[i] > MaxNumber){
+        MaxNumber = numbers[i]
+    }
 }
-var avg = sum/numbers.length;
-console.log(avg);
 
+console.log(MaxNumber);
+
+
+const Numbers = [2, 5, 1, 8];
+let MinimumNumber = numbers[0];
+
+for(let i=0; i<=Numbers.length;i++){
+
+    if(Numbers[i] < MinimumNumber){
+        MinimumNumber = numbers[i]
+    }
+}
+
+console.log(MinimumNumber);
