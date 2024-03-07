@@ -1169,10 +1169,24 @@
 //Finding the Sum
 
 
+// const numbers = [2, 5, 1, 8];
+// let num = 0
+// for(let i = 0 ; i<=numbers.length-1; i++){
+//     num = num + numbers[i];
+// }
+// console.log(num);
+
+
+//Finding the Average
+
+
 const numbers = [2, 5, 1, 8];
-let num = 0
-for(let i = 0 ; i<=numbers.length-1; i++){
-    num = num + numbers[i];
+
+let sum = 0;
+
+for(let i = 0;i<numbers.length;i++){
+    sum = sum + numbers[i];
 }
-console.log(num);
+var avg = sum/numbers.length;
+console.log(avg);
 
