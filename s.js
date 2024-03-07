@@ -1146,24 +1146,33 @@
 
 /// PALINDROME
 
-function rev (str){
+// function rev (str){
   
-    let reversed = "";
+//     let reversed = "";
 
-    for(let i = str.length-1; i>=0; i--){
-       reversed = reversed + str[i]
-    }
-       if(str === reversed){
-        console.log("palindrome");
-       }else{
-        console.log("not palindrome");
-       }
+//     for(let i = str.length-1; i>=0; i--){
+//        reversed = reversed + str[i]
+//     }
+//        if(str === reversed){
+//         console.log("palindrome");
+//        }else{
+//         console.log("not palindrome");
+//        }
     
 
-    return reversed;
+//     return reversed;
+// }
+
+// rev("ABCDCBA");
+
+
+//Finding the Sum
+
+
+const numbers = [2, 5, 1, 8];
+let num = 0
+for(let i = 0 ; i<=numbers.length-1; i++){
+    num = num + numbers[i];
 }
-
-rev("ABCDCBA");
-
-
+console.log(num);
 
