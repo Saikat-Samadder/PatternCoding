@@ -1194,27 +1194,52 @@
 
 //Finding the Maximum/Minimum
 
-const numbers = [2, 5, 1, 8];
-let MaxNumber = numbers[0];
+// const numbers = [2, 5, 1, 8];
+// let MaxNumber = numbers[0];
 
-for(let i=0; i<=numbers.length;i++){
+// for(let i=0; i<=numbers.length;i++){
 
-    if(numbers[i] > MaxNumber){
-        MaxNumber = numbers[i]
-    }
+//     if(numbers[i] > MaxNumber){
+//         MaxNumber = numbers[i]
+//     }
+// }
+
+// console.log(MaxNumber);
+
+
+// const Numbers = [2, 5, 1, 8];
+// let MinimumNumber = numbers[0];
+
+// for(let i=0; i<=Numbers.length;i++){
+
+//     if(Numbers[i] < MinimumNumber){
+//         MinimumNumber = numbers[i]
+//     }
+// }
+
+// console.log(MinimumNumber);
+
+
+// let index = [4, 5 ,7 , 12, 54]
+// let element = 5
+
+// let Index = -1
+
+// for(let i = 0; i<index.length;i++){
+//     if(index[i]===element){
+//       index = i
+//     }
+// }
+// console.log(index);
+
+//Reversing an Array
+
+const numbers = [2, 5, 1, 8]
+
+let revArray = [];
+
+for(let i = numbers.length-1;i>=0;i--){
+  revArray.push(numbers[i])
 }
 
-console.log(MaxNumber);
-
-
-const Numbers = [2, 5, 1, 8];
-let MinimumNumber = numbers[0];
-
-for(let i=0; i<=Numbers.length;i++){
-
-    if(Numbers[i] < MinimumNumber){
-        MinimumNumber = numbers[i]
-    }
-}
-
-console.log(MinimumNumber);
+console.log(revArray);
