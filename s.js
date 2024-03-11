@@ -1320,4 +1320,12 @@
 //     console.log(max_profit);
 
 
+//Finding the Sum:
 
+const numbers = [2, 5, 1, 8];
+let sum = 0
+
+for(let i = 0 ; i<=numbers.length-1;i++){
+    sum = sum + numbers[i]
+}
+console.log(sum);
