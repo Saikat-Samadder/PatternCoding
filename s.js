@@ -1234,12 +1234,90 @@
 
 //Reversing an Array
 
-const numbers = [2, 5, 1, 8]
+// const numbers = [2, 5, 1, 8]
+// function rev(numbers){
 
-let revArray = [];
+//    let revArray = [];
 
-for(let i = numbers.length-1;i>=0;i--){
-  revArray.push(numbers[i])
-}
+// for(let i = numbers.length-1;i>=0;i--){
+//   revArray.push(numbers[i])
+// }
+//   return revArray;
+// }
 
-console.log(revArray);
+// console.log(rev([2, 5, 1, 8]));
+
+
+//Rotating an Array:
+
+// var N = 10
+//  function Sqr(N){
+//     if(N%2 !== 0){
+//         return false;
+//     }
+//     while(N>1){
+//         if(N%2 !==0){
+//         return false;
+//         }
+//         console.log(N);
+//         N=N/2;
+//     }
+
+//     if(N==1){
+//         return true;
+//     }
+     
+//  }
+// console.log(Sqr(N));
+
+// let Name = "My name is Saikat";
+// let count = 0;
+// for(let i=0; i<Name.length;i++){
+//     console.log(Name[i]);
+    
+// }
+
+
+// function maxProfit(prices) {
+//     let maxProfit = 0;
+
+//     for (let i = 0; i < prices.length - 1; i++) {
+//         for (let j = i + 1; j < prices.length; j++) {
+//             let profit = prices[j] - prices[i];
+//             if (profit > maxProfit) {
+//                 maxProfit = profit;
+//             }
+//         }
+//     }
+
+//     return maxProfit;
+// }
+
+// // Example usage:
+// const prices = [1, 5, 3, 6, 4,7];
+// console.log(maxProfit(prices));
+
+// function maxProfit( prices, n)
+// {
+//     let buy = prices[0], max_profit = 0;
+//     for (let i = 1; i < n; i++) {
+ 
+        
+//         if (buy > prices[i])
+//             buy = prices[i];
+ 
+        
+//         else if (prices[i] - buy > max_profit)
+//             max_profit = prices[i] - buy;
+//     }
+//     return max_profit;
+// }
+ 
+
+//     let prices= [ 7, 1, 5, 6, 4 ];
+//     let n =5;
+//     let max_profit = maxProfit(prices, n);
+//     console.log(max_profit);
+
+
+
