@@ -1343,24 +1343,83 @@
 
 // Finding the Maximum/Minimum:
 
-const numbers = [2, 5, 1, 8];
+// const numbers = [2, 5, 1, 8];
 
-let MaxNumber = 0;
+// let MaxNumber = 0;
 
-for(let i=0 ; i<numbers.length;i++){
-     if(numbers[i]> MaxNumber){
-        MaxNumber = numbers[i]
-     }
+// for(let i=0 ; i<numbers.length;i++){
+//      if(numbers[i]> MaxNumber){
+//         MaxNumber = numbers[i]
+//      }
+// }
+// console.log(MaxNumber);
+
+// const Numbers = [2, 5, 1, 8];
+
+// let Min_Number = 1;
+
+// for(let i=0 ; i<Numbers.length;i++){
+//      if(Numbers[i]< Min_Number){
+//         Min_Number = Numbers[i]
+//      }
+// }
+// console.log(Min_Number);
+
+
+// function lengthOfLastWord(s) {
+//     const words = s.trim().split(/\s+/);
+//     return words.pop().length;
+// }
+
+
+// const stringExample = "Saikat Samadder";
+// const result = lengthOfLastWord(stringExample);
+// console.log(result);
+
+// let  Numbers = [5,65,75,95,85,95,75,15] 
+
+// let Abc = new Set (Numbers)
+
+// console.log(Abc);
+
+// let Disnt = new Set(Numbers)
+
+// let Arr = [...Disnt]
+
+// console.log(Arr);
+
+// let acc = Arr.sort((a,b)=>b-a)
+
+// if(acc[2]){
+//     console.log(acc[2]);
+// }else{
+//     console.log(acc[0]);
+// }
+
+
+let Name = "elephant";
+// console.log(Name[1]);
+// Name[1] = "L";
+// console.log(Name);
+
+let s = Name.split("")
+let start = 0;
+let end = s.length-1;
+let vowl = "aeiouAEIOU"
+while(start<end){
+    while(!vowl.includes(s[start])&& start<end){
+           start++;
+    }
+    while(!vowl.includes(s[end])&& start<end){
+        end--;
+ }
+    [s[start],s[end]]=[s[end],s[start]]
+
+    start++;
+    end--;
 }
-console.log(MaxNumber);
+console.log(s.join(''));
 
-const Numbers = [2, 5, 1, 8];
 
-let Min_Number = 1;
 
-for(let i=0 ; i<Numbers.length;i++){
-     if(Numbers[i]< Min_Number){
-        Min_Number = Numbers[i]
-     }
-}
-console.log(Min_Number);
+
