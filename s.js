@@ -1332,10 +1332,35 @@
 
 //Finding the Average:
 
-const numbers = [2, 5, 1, 8];
-let avg = 0
+// const numbers = [2, 5, 1, 8];
+// let avg = 0
 
-for(let i=0;i<=numbers.length-1;i++){
-  avg = avg + numbers[i]/2;
+// for(let i=0;i<=numbers.length-1;i++){
+//   avg = avg + numbers[i]/2;
+// }
+// console.log(avg);
+
+
+// Finding the Maximum/Minimum:
+
+const numbers = [2, 5, 1, 8];
+
+let MaxNumber = 0;
+
+for(let i=0 ; i<numbers.length;i++){
+     if(numbers[i]> MaxNumber){
+        MaxNumber = numbers[i]
+     }
 }
-console.log(avg);
+console.log(MaxNumber);
+
+const Numbers = [2, 5, 1, 8];
+
+let Min_Number = 1;
+
+for(let i=0 ; i<Numbers.length;i++){
+     if(Numbers[i]< Min_Number){
+        Min_Number = Numbers[i]
+     }
+}
+console.log(Min_Number);
