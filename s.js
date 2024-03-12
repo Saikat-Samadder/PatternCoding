@@ -1322,10 +1322,20 @@
 
 //Finding the Sum:
 
-const numbers = [2, 5, 1, 8];
-let sum = 0
+// const numbers = [2, 5, 1, 8];
+// let sum = 0
 
-for(let i = 0 ; i<=numbers.length-1;i++){
-    sum = sum + numbers[i]
+// for(let i = 0 ; i<=numbers.length-1;i++){
+//     sum = sum + numbers[i]
+// }
+// console.log(sum);
+
+//Finding the Average:
+
+const numbers = [2, 5, 1, 8];
+let avg = 0
+
+for(let i=0;i<=numbers.length-1;i++){
+  avg = avg + numbers[i]/2;
 }
-console.log(sum);
+console.log(avg);
