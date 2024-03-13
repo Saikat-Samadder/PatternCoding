@@ -1397,29 +1397,165 @@
 // }
 
 
-let Name = "elephant";
+// let Name = "elephant";
 // console.log(Name[1]);
 // Name[1] = "L";
 // console.log(Name);
 
-let s = Name.split("")
-let start = 0;
-let end = s.length-1;
-let vowl = "aeiouAEIOU"
-while(start<end){
-    while(!vowl.includes(s[start])&& start<end){
-           start++;
+// let s = Name.split("")
+// let start = 0;
+// let end = s.length-1;
+// let vowl = "aeiouAEIOU"
+// while(start<end){
+//     while(!vowl.includes(s[start])&& start<end){
+//            start++;
+//     }
+//     while(!vowl.includes(s[end])&& start<end){
+//         end--;
+//  }
+//     [s[start],s[end]]=[s[end],s[start]]
+
+//     start++;
+//     end--;
+// }
+// console.log(s.join(''));
+
+
+// var kidsWithCandies = function(candies, extraCandies) {
+         
+//     let max = Math.max(...candies)
+//     let result = [];
+//     for(let i =0; i<candies.length; i++){
+//         if(candies[i]+ extraCandies >= max){
+//             result[i] = true
+//         }else{
+//             result[i] =false
+//         }
+//     }
+//      return result
+// };
+// console.log(kidsWithCandies([2,5,2,1,5] , 2));
+
+
+// var reverseString = function(s) {
+//     var result = '';
+//     for(let i=s.length-1;i>=0;i--){
+//         result= result + s[i];
+//     }
+//     return result;
+// };
+// let Ans = reverseString("Saikat")
+// console.log(Ans);
+
+
+// function sum(n){
+
+//     return (n * (n + 1) * (2 * n + 1)) / 6
+// }
+//  console.log(sum(472994162))
+
+//  class Solution {
+//     /**
+//     * @param number n
+    
+//     * @returns number
+//     */
+//         seriesSum(n) {
+//           let sum = n*(n+1)/2
+//           return sum;
+//         }
+        
+//     }
+//     const solutionInstance = new Solution();
+//    const result = solutionInstance.seriesSum(); // Replace 5 with the desired value
+//    console.log(result);
+
+// function findValueEqualsIndex(arr) {
+//     const result = [];
+  
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] === i + 1) { // Adjust the condition based on whether your indices are 0-based or 1-based
+//         result.push(i + 1);  // Add 1 if your indices are 0-based
+//       }
+//     }
+  
+//     return result;
+//   }
+  
+//   // Example usage:
+//   const inputArray = [1, 2, 3, 4, 5];
+//   const resultArray = findValueEqualsIndex(inputArray);
+//   console.log(resultArray);
+
+
+//   function linearSearch(arr, n) 
+//   { 
+//       let i; 
+//       for(i = 0; i < n; i++) 
+//       { 
+//           if(arr[i] == i) 
+//               return i; 
+//       } 
+    
+//       /* If no fixed point present  
+//       then return -1 */
+//       return -1; 
+//   } 
+
+// // Driver Code 
+//   let arr = [-10, -1, 0, 3, 10, 11, 30, 50, 100]; 
+//   let n = arr.length; 
+//   console.log(("Fixed Point is "+ linearSearch(arr, n)));
+
+
+// class Solution {
+//     valueEqualToIndex(arr, n) {
+//         for (let i = 0; i < n; i++) {
+//             if (arr[i] === i) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+// }
+
+// // Example usage:
+// const solutionInstance = new Solution();
+// const inputArray = [1, 2, 3, 4, 5];
+// const result = solutionInstance.valueEqualToIndex(inputArray, inputArray.length);
+// console.log(result);
+
+// let arr = [1,2,3,4,5,6,7,8]
+// for(let i=0;i<arr.length;i+2){
+//      console.log(arr[i]);
+// }
+
+// class Solution {
+//     print(arr, n) {
+//       //code here
+//       for (let i = 0; i < n; i += 2) {
+//           console.log(arr[i]);
+//       }
+//     }
+//   }
+  
+//   // Example usage:
+//   const solutionInstance = new Solution();
+//   const inputArray = [1, 2, 3, 4, 5, 6];
+//   solutionInstance.print(inputArray, inputArray.length);
+
+
+// let arr = [1,2,3,4,5,6,7]
+// for(let i=0 ;i<arr.length;i++){
+//      if(arr[i]%2 !== 0){
+//         console.log(arr[i]);
+//      }
+// }
+
+function loop(N){
+      if(N>0){
+        loop(N-1)
+        console.log(N);
+      }
     }
-    while(!vowl.includes(s[end])&& start<end){
-        end--;
- }
-    [s[start],s[end]]=[s[end],s[start]]
-
-    start++;
-    end--;
-}
-console.log(s.join(''));
-
-
-
-
+loop(5)
