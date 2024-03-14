@@ -1552,10 +1552,133 @@
 //      }
 // }
 
-function loop(N){
-      if(N>0){
-        loop(N-1)
-        console.log(N);
-      }
-    }
-loop(5)
+// function loop(N){
+//       if(N>0){
+//         loop(N-1)
+//         console.log(N);
+//       }
+//     }
+// loop(5)
+
+
+// function palindrome(arr){
+//     let start = 0;
+// let end = arr.length-1;
+
+// while(start<end){
+//     if(arr[start] !== arr[end]){
+//         return false;
+//     }
+//         start++;
+//         end--;
+
+//     return true;
+// }
+// }
+
+// console.log(palindrome([1,2,3,2,1]));
+// let N =3
+// let result = '';
+//     for (let i = N; i >= 1; i--) {
+//         for (let j = N; j >= i; j--) {
+//             result += i + ' ';
+//         }
+//     }
+// console.log(result);
+
+// function generatePattern(N) {
+//     let result = ' ';
+//     for (let i = N; i >= 1; i--) {
+//         for (let j = N; j >= i; j--) {
+//             result += i + ' ';
+//         }
+//     }
+//     return result.trim(); // Trim to remove extra space at the end
+// }
+// console.log(generatePattern(3));
+// console.log(generatePattern(2));
+// console.log(generatePattern(1));
+
+// function generatePattern(N) {
+//     let result = '';
+//     for (let i = N; i >= 1; i--) {
+//         for (let j = 1; j <= N; j++) {
+//             result += i + ' ';
+//         }
+//         result += '';
+//     }
+//     return result.trim(); // Trim to remove extra space at the end
+// }
+
+// // Example usage:
+// console.log(generatePattern(3));
+// console.log(generatePattern(2));
+// console.log(generatePattern(1));
+
+
+
+// function srt(arr){
+// let Srt = arr.sort((a,b)=>a-b)
+// let N = arr.length
+// let mid = Math.floor(N/2)
+
+// if(N%2==0){
+//     return (arr[mid-1]+arr[mid]/2)
+// }else{
+//     return arr[mid]
+// }
+
+// }
+
+// console.log(srt([2,3,5,4,6,85,23,21]));
+
+// var majorityElement = function(nums) {
+//     nums.sort((a, b) => a - b);
+//     return nums[Math.floor(nums.length / 2)];
+// };
+
+// console.log(majorityElement([5,8,3]));
+
+// var plusOne = function(digits) {
+    
+//     let add = digits.length - 1
+//     let ADD = 
+//   console.log(add);
+// };
+// plusOne([1,2,3,4])
+
+// function plusOne(digits) {
+//     for (let i = digits.length - 1; i >= 0; i--) {
+//         if (digits[i] !== 9) {
+//             digits[i]++;
+//             return digits;
+//         } else {
+//             digits[i] = 0;
+//         }
+//     }
+//     // If all digits are 9, we need to add one more digit
+//     return [1, ...digits];
+// }
+
+// console.log(plusOne([1, 2, 3])); // Example usage
+
+let a = 4;
+let b = 5;
+if(a!==b){
+    console.log(true);
+}else{
+    console.log(false);
+}
+// ((a,b)=>a-b)
+let A = "saikat"
+let B = "aikats";
+
+let srt = B.split('').sort().join('')
+let Srt = A.split('').sort().join('')
+if(srt===Srt){
+    console.log("Anagram");
+}else{
+    console.log("Not Anagram");
+}
+
+
