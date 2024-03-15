@@ -1708,7 +1708,7 @@
 // }
 // console.log(find_median([2,3,51,82,2]));
 
-function armstrongNumber(n){
+// function armstrongNumber(n){
         //  let sum = 0
         //  let k =n
         //  while(n>0){
@@ -1722,21 +1722,41 @@ function armstrongNumber(n){
         //  }else{
         //     return false
         //  }
-        let sum = 0
-         let k =n
-         while(n>0){
-            let rem = n%10
-            sum = sum + (rem*rem*rem)
-            n = Math.floor(n/10)
-         }
+//         let sum = 0
+//          let k =n
+//          while(n>0){
+//             let rem = n%10
+//             sum = sum + (rem*rem*rem)
+//             n = Math.floor(n/10)
+//          }
 
-         if(sum === k){
-            console.log("Yes")
-         }else{
-            console.log("No")
-         }
+//          if(sum === k){
+//             console.log("Yes")
+//          }else{
+//             console.log("No")
+//          }
+//     }
+// console.log(armstrongNumber(153));
+
+
+
+// let a = 4;
+// let b = 5;
+// if(a!==b){
+//     console.log(false);
+// }else{
+//     console.log(true);
+// }
+//[2,3,4,5,6,7,8]
+function countOfElements(arr,x){
+        //code here
+        let count = 0;
+        for(let i=0;i<arr.length-1;i++){
+              if(arr[i]<x){
+                count++;
+              }
+        }
+        return count;
     }
-console.log(armstrongNumber(153));
 
-
-
+    console.log(countOfElements([2,3,4,5,6,7,8],6));
