@@ -1670,15 +1670,73 @@
 //     console.log(false);
 // }
 // ((a,b)=>a-b)
-let A = "saikat"
-let B = "aikats";
+// let A = "saikat"
+// let B = "aikats";
 
-let srt = B.split('').sort().join('')
-let Srt = A.split('').sort().join('')
-if(srt===Srt){
-    console.log("Anagram");
-}else{
-    console.log("Not Anagram");
-}
+// let srt = B.split('').sort().join('')
+// let Srt = A.split('').sort().join('')
+// if(srt===Srt){
+//     console.log("Anagram");
+// }else{
+//     console.log("Not Anagram");
+// }
+
+// function srt(arr){
+// let Srt = arr.sort((a,b)=>a-b)
+// let N = arr.length
+// let mid = Math.floor(N/2)
+
+// if(N%2==0){
+//     return (arr[mid-1]+arr[mid]/2)
+// }else{
+//     return arr[mid]
+// }
+
+// }
+// console.log(srt([2,3,51,82]));
+// function find_median(arr){
+//  let srt = arr.sort((a,b) => a-b)
+//  let N = arr.length
+//  let mid = Math.floor(N / 2)
+   
+//  if(N%2 == 0){
+//     return (arr[mid-1] + arr[mid]/2)
+//  }else{
+//     return arr[mid]
+//  }
+  
+// }
+// console.log(find_median([2,3,51,82,2]));
+
+function armstrongNumber(n){
+        //  let sum = 0
+        //  let k =n
+        //  while(n>0){
+        //     let rem = n%10
+        //     sum = sum + (rem*rem*rem)
+        //     n = Math.floor(n/10)
+        //  }
+
+        //  if(sum == k){
+        //     return true
+        //  }else{
+        //     return false
+        //  }
+        let sum = 0
+         let k =n
+         while(n>0){
+            let rem = n%10
+            sum = sum + (rem*rem*rem)
+            n = Math.floor(n/10)
+         }
+
+         if(sum === k){
+            console.log("Yes")
+         }else{
+            console.log("No")
+         }
+    }
+console.log(armstrongNumber(153));
+
 
 
