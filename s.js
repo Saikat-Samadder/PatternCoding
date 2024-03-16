@@ -1780,25 +1780,47 @@
 // printNumbersOnSameLine(numbers); 
 
 
-function findIndex(arr,key){
-       //code here
-       let startIndex = -1;
-       let endIndex   = -1;
+// function findIndex(arr,key){
+//        //code here
+//        let startIndex = -1;
+//        let endIndex   = -1;
 
-       for(let i=0;i<arr.length;i++){
-              if(arr[i]===key){
-                startIndex = i;
-                break
-              }
-       }
+//        for(let i=0;i<arr.length;i++){
+//               if(arr[i]===key){
+//                 startIndex = i;
+//                 break
+//               }
+//        }
 
-       for(let i = arr.length-1;i>=0;i--){
-            if(arr[i]===key){
-                endIndex = i;
-                break
-            }
-       }
+//        for(let i = arr.length-1;i>=0;i--){
+//             if(arr[i]===key){
+//                 endIndex = i;
+//                 break
+//             }
+//        }
 
-       return [startIndex,endIndex]
-}  
-console.log(findIndex([1,2,3,4,5,5,6],5));
+//        return [startIndex,endIndex]
+// }  
+// console.log(findIndex([1,2,3,4,5,5,6],5));
+
+
+// function is_palindrome(n){
+//     //code here
+//     let num = n.toString()
+//    let rev = num.split('').reverse().join('')
+//     return rev===num;
+//     // if(rev === n){
+//     //     return "Yes"
+//     // }
+//     // return "No"
+// }
+
+
+// console.log(is_palindrome(121));
+
+function rev(Digit){
+    for(let i=Digit.length;i>=0;i--){
+        console.log(Digit[i]);
+    }
+}
+rev([2,6,5])
