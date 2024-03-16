@@ -1748,15 +1748,57 @@
 //     console.log(true);
 // }
 //[2,3,4,5,6,7,8]
-function countOfElements(arr,x){
-        //code here
-        let count = 0;
-        for(let i=0;i<arr.length-1;i++){
-              if(arr[i]<x){
-                count++;
-              }
-        }
-        return count;
-    }
+// function countOfElements(arr,x){
+//         //code here
+//         let count = 0;
+//         for(let i=0;i<arr.length-1;i++){
+//               if(arr[i]<x){
+//                 count++;
+//               }
+//         }
+//         return count;
+//     }
 
-    console.log(countOfElements([2,3,4,5,6,7,8],6));
+//     console.log(countOfElements([2,3,4,5,6,7,8],6));
+
+// function sum(arr) {
+//         // code here
+//         let Sum = 0;
+//         for(let i=0;i<arr.length;i++){
+//             Sum=Sum+arr[i]
+//         }
+//         return Sum;
+//     }
+// console.log(sum([2,3,4,5,6,7,8]));
+// function printNumbersOnSameLine(numbers) {
+//     for (let i = 0; i < numbers.length; i++) {
+//         process.stdout.write(numbers[i].toString() + " ");
+//     }
+// }
+
+// let numbers = [1, 2, 3, 4, 5];
+// printNumbersOnSameLine(numbers); 
+
+
+function findIndex(arr,key){
+       //code here
+       let startIndex = -1;
+       let endIndex   = -1;
+
+       for(let i=0;i<arr.length;i++){
+              if(arr[i]===key){
+                startIndex = i;
+                break
+              }
+       }
+
+       for(let i = arr.length-1;i>=0;i--){
+            if(arr[i]===key){
+                endIndex = i;
+                break
+            }
+       }
+
+       return [startIndex,endIndex]
+}  
+console.log(findIndex([1,2,3,4,5,5,6],5));
